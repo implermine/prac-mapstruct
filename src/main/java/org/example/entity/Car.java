@@ -11,6 +11,7 @@ public class Car {
     private int numberOfSeats;
     private CarType type;
 
+
     public static enum CarType{
         HYUNDAI,
         KIA
