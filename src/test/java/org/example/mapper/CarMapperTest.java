@@ -3,6 +3,7 @@ package org.example.mapper;
 import org.assertj.core.api.Assertions;
 import org.example.dto.CarDto;
 import org.example.entity.Car;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
