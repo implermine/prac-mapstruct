@@ -7,6 +7,7 @@ import lombok.Getter;
 @Getter
 public class Car {
 
+    private Long id;
     private String make;
     private int numberOfSeats;
     private CarType type;

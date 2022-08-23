@@ -1,7 +1,7 @@
 package org.example.mapper;
 
-import org.example.dto.CarDto;
-import org.example.entity.Car;
+import org.example.dto.PersonDto;
+import org.example.entity.Person;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,25 +13,23 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-public class CarMapperSpringDITest {
+public class PersonMapperTest {
 
     @Autowired
-    CarMapper carMapper;
+    PersonMapper personMapper;
 
     @Test
     @DisplayName("Spring DI를 통해서도 사용가능한지 여부를 테스트")
     void shouldDependencyInjection(){
 
         //given
-        Car car = new Car( 1L,"Morris", 5, Car.CarType.KIA );
+        PersonDto dto = new PersonDto("implermine");
 
         //when
-        CarDto carDto = carMapper.carToCarDto(car);
+        Person person = personMapper.dtoToEntity(dto, 3L);
 
         //then
-        assertThat( carDto ).isNotNull();
-        assertThat( carDto.getMake() ).isEqualTo( "Morris" );
-        assertThat( carDto.getSeatCount() ).isEqualTo( 5 );
-        assertThat( carDto.getType() ).isEqualTo( "KIA" );
+        System.out.println(person);
+        System.out.println(personMapper.customMappingMethod());
     }
 }

@@ -1,13 +1,13 @@
 package org.example.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Getter
 @AllArgsConstructor
-@NoArgsConstructor
+@Builder
+@Getter
+@ToString
 public class Person {
 
+    private Long id;
     private String name;
 }

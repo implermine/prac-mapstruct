@@ -13,12 +13,14 @@ public class CarMapperTest {
     @Test
     public void shouldMapCarToDto(){
         //given
-        Car car = new Car( "Morris", 5, Car.CarType.KIA );
+        Car car = new Car(1L, "Morris", 5, Car.CarType.KIA );
 
         //when
         CarDto carDto = CarMapper.INSTANCE.carToCarDto( car );
 
         //then
+        System.out.println(carDto);
+
         assertThat( carDto ).isNotNull();
         assertThat( carDto.getMake() ).isEqualTo( "Morris" );
         assertThat( carDto.getSeatCount() ).isEqualTo( 5 );

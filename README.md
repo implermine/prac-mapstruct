@@ -33,3 +33,8 @@ https://mapstruct.org/documentation/stable/reference/html/#using-dependency-inje
 Mapper의 Instance를 static으로 선언할 수도 있지만, Component로 등록할 수도 있다.
 
 @Mapper(componentModel = "spring") 으로 등록한다.
+
+---
+# 작업로그
+
+2022-08-23 부분집합의 합으로 집합을 만들 수 있는지 확인
