@@ -1,4 +1,4 @@
-package org.example.dto.hierarchy;
+package org.example.entity.hierarchy;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,9 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class CountryDto {
+public class CountryFlat {
 
     private String name;
-    private CountryAttributeDto countryAttribute;
-    private String isbn2;
+    private Integer height;
+    private Boolean isGood;
+
 }

@@ -11,4 +11,5 @@ public class Country {
 
     private String name;
     private CountryAttribute countryAttribute;
+    private String isbn;
 }
