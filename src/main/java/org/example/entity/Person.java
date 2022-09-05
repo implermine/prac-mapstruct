@@ -10,4 +10,5 @@ public class Person {
 
     private Long id;
     private String name;
+    private Integer height;
 }

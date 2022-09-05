@@ -12,14 +12,14 @@ import org.mapstruct.factory.Mappers;
 /**
  * Generated Code가 생성된다.
  */
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedSourcePolicy = ReportingPolicy.IGNORE)
-public interface CarMapper {
-
-    CarMapper INSTANCE = Mappers.getMapper(CarMapper.class);
-
-    @Mapping(source = "numberOfSeats", target = "seatCount")
-//    @Mapping(source = "make" , target = "make", ignore = true)
-//    @Mapping(target = "", source = "id", ignore = true)
-    CarDto carToCarDto(Car car);
-
-}
+//@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedSourcePolicy = ReportingPolicy.IGNORE)
+//public interface CarMapper {
+//
+//    CarMapper INSTANCE = Mappers.getMapper(CarMapper.class);
+//
+//    @Mapping(source = "numberOfSeats", target = "seatCount")
+////    @Mapping(source = "make" , target = "make", ignore = true)
+////    @Mapping(target = "", source = "id", ignore = true)
+//    CarDto carToCarDto(Car car);
+//
+//}

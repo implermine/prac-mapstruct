@@ -1,16 +1,17 @@
 package org.example.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Setter
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
-public class PersonDto {
+@ToString
+public class BookDto {
 
-    private String nameForDto;
-    private Integer height;
+    private String name;
+    private String isbn;
+    private String targetUnmapped;
 }

@@ -2,10 +2,7 @@ package org.example.mapper;
 
 import org.example.dto.PersonDto;
 import org.example.entity.Person;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingConstants;
-import org.mapstruct.ReportingPolicy;
+import org.mapstruct.*;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING, unmappedSourcePolicy = ReportingPolicy.IGNORE)
 public interface PersonMapper {

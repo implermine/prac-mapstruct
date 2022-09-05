@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -23,7 +22,7 @@ public class PersonMapperTest {
     void shouldDependencyInjection(){
 
         //given
-        PersonDto dto = new PersonDto("implermine");
+        PersonDto dto = new PersonDto("implermine", 180);
 
         //when
         Person person = personMapper.dtoToEntity(dto, 3L);
