@@ -8,7 +8,9 @@ import org.mapstruct.MappingConstants;
 /**
  * Polymorphism Mapper
  */
-@Mapper(componentModel = MappingConstants.ComponentModel.SPRING, uses = {VehicleMapper.class})
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING,
+        uses = {VehicleMapper.class}
+)
 public interface VehicleWrapperMapper {
 
     VehicleWrapperDto toDto(VehicleWrapper entity);
