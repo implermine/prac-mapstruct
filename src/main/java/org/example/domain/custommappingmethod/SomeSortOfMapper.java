@@ -1,6 +1,5 @@
-package org.example.custommappingmethod;
+package org.example.domain.custommappingmethod;
 
-import org.example.domain.fish.mapper.FishTankMapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

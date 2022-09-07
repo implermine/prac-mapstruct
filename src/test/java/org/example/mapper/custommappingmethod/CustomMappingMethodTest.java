@@ -1,8 +1,8 @@
 package org.example.mapper.custommappingmethod;
 
-import org.example.custommappingmethod.SomeSortOfMapper;
-import org.example.custommappingmethod.Square;
-import org.example.custommappingmethod.SquareInfo;
+import org.example.domain.custommappingmethod.SomeSortOfMapper;
+import org.example.domain.custommappingmethod.Square;
+import org.example.domain.custommappingmethod.SquareInfo;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

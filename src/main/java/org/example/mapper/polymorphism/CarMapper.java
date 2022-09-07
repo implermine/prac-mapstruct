@@ -10,6 +10,7 @@ import org.mapstruct.MappingConstants;
 public interface CarMapper {
 
     @Mapping(target = "type", constant = "CAR")
+    @Mapping(target = "pleaseIgnoreMe", ignore = true)
     CarDto extraOrdinaryMappingMethod(Car someParameter);
 
 
