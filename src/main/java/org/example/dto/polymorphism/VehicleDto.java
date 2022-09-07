@@ -3,10 +3,12 @@ package org.example.dto.polymorphism;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 @Getter
-@Setter
 @NoArgsConstructor
+//@Setter
+@SuperBuilder
 public abstract class VehicleDto {
 
     private Long id;
