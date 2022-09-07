@@ -1,4 +1,4 @@
-package org.example.domain.list_enum;
+package org.example.domain.common;
 
 public enum Status {
     SUCCESS,

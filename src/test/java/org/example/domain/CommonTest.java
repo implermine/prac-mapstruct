@@ -1,6 +1,6 @@
 package org.example.domain;
 
-import org.example.domain.list_enum.*;
+import org.example.domain.common.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
-public class List_EnumTest {
+public class CommonTest {
 
     @Autowired
     private BoxMapper boxMapper;
