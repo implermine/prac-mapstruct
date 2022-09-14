@@ -39,6 +39,9 @@ public class CommonTest {
         box.setHelloImStringList(stringList);
         box.setStatus(Status.SUCCESS);
 
+        box.setHelloImStringList(null);
+        box.setStatus(null);
+
         BoxDto boxDto = boxMapper.toDto(box);
 
         System.out.println("stop");

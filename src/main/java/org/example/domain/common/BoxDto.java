@@ -18,6 +18,7 @@ public class BoxDto {
     private List<Boolean> nullTest;
 
     public BoxDto() {
-        this.nullTest = List.of(Boolean.TRUE); // 기본생성자에서 True(list) 로 초기화
+        this.nullTest = List.of(Boolean.TRUE); // 기본생성자에서 True(list) 로 초기화, 따라서 null이 매핑되어선 안됌
+        this.status = Status.SUCCESS;
     }
 }
