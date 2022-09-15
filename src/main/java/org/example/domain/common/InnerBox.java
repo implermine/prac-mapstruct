@@ -10,4 +10,6 @@ import lombok.experimental.Accessors;
 public class InnerBox {
 
     private String name;
+
+    private String isbn;
 }

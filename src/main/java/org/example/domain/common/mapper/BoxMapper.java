@@ -1,6 +1,8 @@
-package org.example.domain.common;
+package org.example.domain.common.mapper;
 
 
+import org.example.domain.common.Box;
+import org.example.domain.common.BoxDto;
 import org.mapstruct.*;
 
 @Mapper(
@@ -17,6 +19,9 @@ public interface BoxMapper {
      * 리스트는 default가 null check 이므로, new ArrayList를 builder에 설정해두면 끝날 일
      */
     BoxDto toDto(Box box);
+
+    @Mapping(target = "isbn", source = "innerBox.isbn")
+    BoxDto toDto2(Box box);
 
 
 }

@@ -33,3 +33,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+clean{
+    delete file('src/main/generated')
+    delete file('out')
+}

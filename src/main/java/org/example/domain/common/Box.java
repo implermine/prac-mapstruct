@@ -16,4 +16,6 @@ public class Box {
     private Status status;
 
     private List<Boolean> nullTest;
+
+    private InnerBox innerBox;
 }
