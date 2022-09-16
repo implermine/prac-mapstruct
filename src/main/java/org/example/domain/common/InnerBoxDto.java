@@ -10,4 +10,6 @@ import lombok.ToString;
 public class InnerBoxDto {
 
     private String name;
+
+    private String gratitude;
 }

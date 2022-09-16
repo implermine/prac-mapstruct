@@ -18,4 +18,6 @@ public class Box {
     private List<Boolean> nullTest;
 
     private InnerBox innerBox;
+
+    private String gratitude;
 }

@@ -89,6 +89,7 @@ public class CommonTest {
         innerBox.setIsbn("1234");
 
         box.setInnerBox(innerBox);
+        box.setGratitude("gratitude");
 
         BoxDto boxDto = boxMapper.toDto3(box);
 

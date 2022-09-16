@@ -25,6 +25,7 @@ public interface BoxMapper {
 
 
     @Mapping(target = ".", source = "innerBox ")
+    @Mapping(target = "innerBox", source = ".") // gratitude
     BoxDto toDto3(Box box);
 
 
