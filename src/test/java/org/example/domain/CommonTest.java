@@ -97,4 +97,22 @@ public class CommonTest {
 
         System.out.println("stop");
     }
+
+    @Test
+    @DisplayName("extract second depth to first depth") //-> available
+    void test4(){
+        Box box = new Box();
+        SecondStage secondStage = new SecondStage();
+        secondStage.setName("hello");
+        FirstStage firstStage = new FirstStage();
+        firstStage.setSecond(secondStage);
+        box.setFirst(firstStage);
+
+
+        BoxDto boxDto = boxMapper.toDto4(box);
+
+        System.out.println(boxDto);
+
+        System.out.println("stop");
+    }
 }

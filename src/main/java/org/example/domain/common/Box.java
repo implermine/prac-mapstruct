@@ -20,4 +20,6 @@ public class Box {
     private InnerBox innerBox;
 
     private String gratitude;
+
+    private FirstStage first;
 }

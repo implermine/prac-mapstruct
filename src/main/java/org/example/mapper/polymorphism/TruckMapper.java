@@ -10,6 +10,5 @@ import org.mapstruct.MappingConstants;
 public interface TruckMapper {
 
     @Mapping(target = "type", constant = "TRUCK")
-
     TruckDto someMethod(Truck some);
 }

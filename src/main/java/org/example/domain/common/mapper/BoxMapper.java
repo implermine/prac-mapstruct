@@ -28,5 +28,11 @@ public interface BoxMapper {
     @Mapping(target = "innerBox", source = ".") // gratitude
     BoxDto toDto3(Box box);
 
+    /**
+     * 2 depth를 flat하게 1 depth로 뽑을 수 있는가?
+     */
+    @Mapping(target = "first" , source = "first.second")
+    BoxDto toDto4(Box box);
+
 
 }
