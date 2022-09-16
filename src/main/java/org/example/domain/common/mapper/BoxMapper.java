@@ -24,4 +24,8 @@ public interface BoxMapper {
     BoxDto toDto2(Box box);
 
 
+    @Mapping(target = ".", source = "innerBox ")
+    BoxDto toDto3(Box box);
+
+
 }

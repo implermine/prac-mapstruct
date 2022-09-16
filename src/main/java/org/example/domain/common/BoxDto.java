@@ -2,11 +2,13 @@ package org.example.domain.common;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.List;
 
 @Getter
 @Setter
+@ToString
 public class BoxDto {
 
     private List<String> helloImStringListEither;

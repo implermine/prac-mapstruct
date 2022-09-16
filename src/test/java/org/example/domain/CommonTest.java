@@ -78,4 +78,22 @@ public class CommonTest {
 
         System.out.println("stop");
     }
+
+    @Test
+    @DisplayName("3.5 Mapping nested bean properties to current target")
+    void test3(){
+        Box box = new Box();
+        InnerBox innerBox = new InnerBox();
+
+        innerBox.setName("name");
+        innerBox.setIsbn("1234");
+
+        box.setInnerBox(innerBox);
+
+        BoxDto boxDto = boxMapper.toDto3(box);
+
+        System.out.println(boxDto);
+
+        System.out.println("stop");
+    }
 }

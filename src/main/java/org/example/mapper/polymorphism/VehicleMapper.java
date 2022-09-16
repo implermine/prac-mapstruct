@@ -16,7 +16,7 @@ public interface VehicleMapper {
 
     @SubclassMapping(source = Car.class, target = CarDto.class)
     @SubclassMapping(source = Truck.class, target = TruckDto.class)
-//    @Mapping(target = "type", source = "entity")
+//    @Mapping(target = "type", source = "entity") <- 이거안될텐데;;
     VehicleDto toDto(Vehicle entity);
 
 //    default String toDtoType(Vehicle entity){
