@@ -11,7 +11,7 @@ import org.mapstruct.*;
 public interface BoxMapper {
 
     @Mapping(target = "helloImStringListEither", source = "helloImStringList")
-//    @BeanMapping(nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
+    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.SET_TO_DEFAULT, nullValueCheckStrategy = NullValueCheckStrategy.ON_IMPLICIT_CONVERSION)
 //    @BeanMapping(nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.SET_TO_DEFAULT) // Box의 List Default Value는...
     /**
      * null 반환을 아예 막는다,

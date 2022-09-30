@@ -22,4 +22,8 @@ public class Box {
     private String gratitude;
 
     private FirstStage first;
+
+    private Boolean boolean1;
+    private String string1;
+    private Object object1;
 }
