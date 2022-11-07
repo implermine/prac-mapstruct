@@ -2,9 +2,8 @@ package org.example.domain.list;
 
 import org.example.domain.list.model.Leaf;
 import org.example.domain.list.model.Tree;
-import org.mapstruct.IterableMapping;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
+import org.example.domain.list.model.TreeDto;
+import org.mapstruct.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -19,4 +18,8 @@ public interface ListMapper {
 
         return tree.getLeafs();
     }
+
+    @Mapping(target = "leafs", source = "leafs")
+    @IterableMapping(nullValueMappingStrategy = NullValueMappingStrategy.RETURN_DEFAULT)
+    TreeDto toDto(Tree tree);
 }
