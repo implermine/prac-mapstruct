@@ -10,4 +10,5 @@ import java.util.List;
 public class Tree {
     private List<Leaf> leafs;
     private List<Leaf> otherLeafs;
+    private Tree someOtherTree;
 }

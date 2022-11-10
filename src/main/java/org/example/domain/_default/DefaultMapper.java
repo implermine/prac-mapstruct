@@ -12,6 +12,7 @@ public interface DefaultMapper {
     BookDto toDto(Book entity);
 
     @Mapping(target = "leafs", source = "leafs", qualifiedByName = {"please"})
+    @Mapping(target = "someOtherTree.leafs", source = "someOtherTree.leafs", qualifiedByName = {"please"})
     TreeDto toDto2(Tree tree);
 
     @Named("please")

@@ -11,4 +11,5 @@ public class TreeDto {
 
     private List<LeafDto> leafs;
     private List<LeafDto> otherLeafs;
+    private TreeDto someOtherTree;
 }
