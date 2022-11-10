@@ -67,7 +67,7 @@ public interface Manual5Mapper {
         return rectangle.getWidth() * rectangle.getHeight();
     }
 
-    @Mapping(target = "area", source = "triangle") // indicatiing the parameter itself`
+    @Mapping(target = "area", source = "triangle") // indicating the parameter itself
     Result fromTriangleToResult(Triangle triangle);
 
     default int calculateTriangleArea(Triangle triangle){
