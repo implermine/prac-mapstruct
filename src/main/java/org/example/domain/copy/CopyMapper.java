@@ -6,10 +6,11 @@ import org.mapstruct.Mapper;
 import org.mapstruct.NullValueMappingStrategy;
 import org.mapstruct.control.DeepClone;
 
-@Mapper
+@Mapper(
+        mappingControl = DeepClone.class
+)
 public interface CopyMapper {
 
-    @BeanMapping(mappingControl = DeepClone.class, nullValueMappingStrategy = NullValueMappingStrategy.RETURN_NULL)
     Company copy(Company company);
 
 }
